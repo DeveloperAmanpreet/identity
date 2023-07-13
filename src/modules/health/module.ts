@@ -1,8 +1,9 @@
-import { Module } from '@nestjs/common';
-import {HealthService} from "./service";
+import { Module } from '@nestjs/common'
+import { HealthService } from './service'
+import {AsyncStorageModule} from "../async-storage/async-storage.module";
 
 @Module({
-  imports: [],
+  imports: [AsyncStorageModule],
   controllers: [],
   providers: [HealthService],
 })

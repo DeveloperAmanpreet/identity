@@ -1,6 +1,5 @@
-import { Controller, Get } from '@nestjs/common';
-import {HealthService} from "../modules/health/service";
-
+import { Controller, Get } from '@nestjs/common'
+import { HealthService } from '../modules/health/service'
 
 @Controller('health')
 export class HealthController {
@@ -8,6 +7,6 @@ export class HealthController {
 
   @Get()
   getHello(): string {
-    return this.healthService.getStatus();
+    return this.healthService.getStatus()
   }
 }
